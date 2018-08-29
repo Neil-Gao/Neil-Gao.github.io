@@ -8,8 +8,8 @@ I am Neil Gao.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
-
+Work and live in Edison, NJ
+Hobbies: 
 ### Contact me
 
 [aimhighfly7859@gmail.com](mailto:aimhighfly7859@gmail.com)
