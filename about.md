@@ -7,7 +7,7 @@ permalink: /about/
 I am Neil Gao.
 
 ### More Information
-[Resume]({{ site.url }}/assets/mydoc.pdf)
+[Resume]({{ site.url }}/file/Resume.pdf)
 Work and live in Edison, NJ
 Hobbies: 
 ### Contact me
