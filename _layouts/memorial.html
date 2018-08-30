@@ -25,6 +25,49 @@
         <h4>Current time in NY, USA</h4>
       </div>
 
+
+      <h1 id="the_day_we_met"></h1>
+      
+      <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Oct 5, 2017 00:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+
+        // Get todays date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = now - countDownDate;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        if(seconds < 10){
+            seconds = "0"+seconds
+        }
+        if(minutes < 10){
+            minutes = "0"+seconds
+        }
+        if(hours < 10){
+            hours = "0"+seconds
+        }
+
+        // Display the result in the element with id="demo"
+        document.getElementById("the_day_we_met").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text
+        if (distance == 365 * (1000 * 60 * 60 * 24)) {
+          document.getElementById("the_day_we_met").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+
+      </script>
+
       <div class="container">
         <header class="masthead clearfix">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
@@ -44,6 +87,10 @@
 
     <div id="main" role="main" class="container">
       {{ content }}
+    </div>
+
+    <div id = "python3">
+      <iframe style="border: none; width: 100%; height: 300px" src="https://console.python.org/python-dot-org-console/"></iframe>
     </div>
 
     <div class="wrapper-footer">
